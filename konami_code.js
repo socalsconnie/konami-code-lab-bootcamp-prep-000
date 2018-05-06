@@ -9,7 +9,7 @@ function init() {
   
  document.body.addEventListener('keydown', function onKeyDownHandler(event){
    const pressedKey = `${event.code}` ;
-   const 
+   const keyPressed = ()
    if (pressedKey === konamiKeys[index]) {
      index++;
      if (index === konamiKeys.length) {
