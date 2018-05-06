@@ -9,10 +9,12 @@ function init() {
   
  document.body.addEventListener('keydown', function onKeyDownHandler(event){
    const pressedKey = `${event.code}` ;
-   const keyPressed = ()
-   if (pressedKey === konamiKeys[index]) {
+   const keyPressed = parseInt(event.which || event.detail);
+   
+   
+   if (pressedKey === konamiKeys[index] || keyPressed === konamiCode[index]) {
      index++;
-     if (index === konamiKeys.length) {
+     if (index === konamiKeys.length || index === konamiCode.length) {
        alert("Congratulations, you did it!");
        index = 0;
      }
